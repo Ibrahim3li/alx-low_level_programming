@@ -1,18 +1,23 @@
 #include "main.h"
 
 /**
- * add - Sums two integers and return the resault
+ * print_alphabet_x10 - function print a to z 0 times
  *
- * @num1: integer one
- * @num2: integer two
- *
- * Return: resault of num1+num2
+ * Return: void
 */
 
-int add(int num1, int num2)
+void print_alphabet_x10(void)
 {
+	int i;
 
-	int sum = num1 + num2;
+	for (i = 0; i < 10; i++)
+	{
+		char c;
 
-	return (sum);
+		for (c = 'a'; c <= 'z'; c++)
+		{
+			_putchar(c);
+		}
+		_putchar('\n');
+	}
 }
