@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 
 void printTimesTable(int n) {
     if (n > 15 || n < 0) {
