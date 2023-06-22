@@ -1,11 +1,18 @@
 #include "main.h"
 
 /**
- * _islower - checks for lowercase character
- * @c: the character to check
- * Return: 1 if c is lowercase, 0 otherwise
- */
-int _islower(int c)
+ * print_numbers - print 0 to 9 using _putchar
+ *
+ * Return: 0 (Success)
+*/
+
+void print_numbers(void)
 {
-	return (c >= 'a' && c <= 'z');
+	int n = 0;
+
+	do {
+		_putchar(n + 48);
+		n++;
+	} while (n >= 0 && n <= 9);
+	_putchar('\n');
 }
