@@ -1,27 +1,21 @@
 #include "main.h"
 
 /**
- * more_numbers - print from 0 to 14 ten times using _putchar
+ * print_line - print a straight line
  *
- * Return: 0 (Success)
+ * @n: is the number os times the ( _ ) printed
 */
 
-void more_numbers(void)
+void print_line(int n)
 {
-	int n, r, c;
+	int lch;
 
-	for (r = 1; r <= 10; r++)
+	if (n <= 0)
+	_putchar('\n');
+	else
 	{
-		for (c = 0; c <= 14; c++)
-		{
-			n = c;
-			if (c > 9)
-			{
-				_putchar(1 + 48);
-				n = c % 10;
-			}
-			_putchar(n + 48);
-		}
-		_putchar('\n');
+	for (lch = 1; lch <= n; lch++)
+	_putchar('_');
+	_putchar('\n');
 	}
 }
