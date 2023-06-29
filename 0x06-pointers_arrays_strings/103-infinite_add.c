@@ -20,7 +20,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	while (n2[j] != '\0')
 	j++;
 	if (i > j)
-	1 = i;
+	l = i;
 	else
 	l = j;
 	if (l + 1 > size_r)
