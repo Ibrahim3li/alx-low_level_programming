@@ -1,1 +1,1 @@
-readme for bit manipulation project 
+bit manipulation project
